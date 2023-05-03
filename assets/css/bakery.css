@@ -1,0 +1,518 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800;900&family=Roboto:wght@400;700;900&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 6.125rem;
+  line-height: 0.8;
+  font-weight: 600;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 3.4375rem;
+  line-height: 1.1;
+}
+
+.btn {
+  border-style: solid;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 32px auto 0 0;
+  padding: 16px 46px 17px 45px;
+  border-radius: 29px;
+  text-decoration: none;
+}
+
+a {
+  color: #111;
+}
+
+.card {
+  color: #111;
+  background-color: #fff;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 20px;
+}
+.card .ni {
+  width: 100%;
+  height: 190px;
+  border-radius: 25px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  h2 {
+    font-size: 2.125rem;
+    line-height: 1.1;
+  }
+}
+header {
+  height: 60px;
+  background-color: #fff;
+}
+header .container {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+header nav {
+  width: 50%;
+  margin-right: -400px;
+  display: block;
+}
+header ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header a {
+  color: #111;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+header a:hover {
+  text-decoration: underline;
+}
+
+main {
+  width: 100%;
+  height: calc(100vh - 50px);
+  background-image: url(/assets/images/home-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .container {
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+main .intro {
+  width: 50%;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+main .intro h3 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 1.378rem;
+  margin: 0 1px 30px 0;
+}
+main .intro .title {
+  grid-column: 1/4;
+  margin-bottom: 80px;
+}
+main .intro .title span:nth-child(1) {
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  font-size: 1.875rem;
+  font-weight: 400;
+  margin: 0 auto 0 0;
+}
+main .intro .callus a {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  border-bottom: 1px solid #f2952d;
+  transition: all 0.3s ease-in-out;
+}
+main .intro .callus a:hover {
+  border-color: #111;
+}
+
+.categories {
+  padding: 70px 0px 120px 0px;
+}
+.categories h2 {
+  text-align: center;
+}
+.categories .categories-grid {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 40px;
+}
+.categories .categories-grid .category {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.categories .categories-grid img {
+  height: 65px !important;
+}
+.categories .categories-grid h4 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.fresh-breads {
+  padding: 100px 0px;
+  background-image: url(/assets/images/fresh-breads-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-color: black;
+  background-size: 50%;
+}
+.fresh-breads .container {
+  height: 500px;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.fresh-breads .content {
+  width: 50%;
+}
+.fresh-breads .content p {
+  margin: 50px 0px;
+}
+.fresh-breads .content a {
+  color: #fff;
+}
+.fresh-breads .btn {
+  border-color: white;
+  color: white;
+  margin-top: 10px;
+  display: inline-block;
+  transition: all 0.3 ease-in-out;
+}
+.fresh-breads .btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.our-breads {
+  padding: 70px 0px;
+  background-color: #f2f2f2;
+}
+.our-breads h2 {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.our-breads .our-breads-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 25px;
+  text-align: center;
+}
+.our-breads h3 {
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin: 20px auto 0;
+}
+.our-breads p {
+  margin: 20px 0;
+}
+.our-breads p.copyrights {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.delicious-baking {
+  padding: 80px 0;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgb(255, 255, 255) 45%, rgb(242, 242, 242) 100%);
+}
+.delicious-baking .container {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.delicious-baking-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 2fr;
+  gap: 40px;
+}
+.delicious-baking-grid .top-right-image {
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+.delicious-baking-grid img {
+  width: 100%;
+  display: block;
+}
+.delicious-baking-grid .img-left {
+  margin-top: 40px;
+}
+.delicious-baking .content {
+  margin-top: 50px;
+}
+.delicious-baking .content h3 {
+  font-size: 1.875rem;
+  line-height: 1.2;
+}
+.delicious-baking .content p {
+  font-size: 1.125rem;
+  line-height: 2;
+  margin: 30px 0px 0px 0px;
+}
+.delicious-baking .content p a {
+  text-decoration: none;
+  border-bottom: 2px solid black;
+  transition: all 0.3 ease-in-out;
+}
+.delicious-baking .content p a:hover {
+  border-bottom-color: #f2952d;
+}
+.delicious-baking .content .btn {
+  border-color: black;
+  color: black;
+  display: inline-block;
+}
+.delicious-baking .content .btn:hover {
+  color: white;
+  background-color: black;
+}
+
+.menu {
+  padding: 120px 0px;
+  background-image: url(/assets/images/menu.bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.menu h2 {
+  color: #fff;
+  text-align: center;
+}
+.menu-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.menu-grid .card {
+  padding: 35px 20px;
+}
+.menu-grid h3 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+.menu-grid ul {
+  list-style-type: none;
+}
+.menu-grid li {
+  font-size: 1.25rem;
+  line-height: 2;
+}
+.menu-grid li::before {
+  content: "-";
+  margin-right: 10px;
+}
+.menu .copyrights {
+  color: white;
+  text-align: center;
+  margin-top: 60px;
+}
+.menu .copyrights a {
+  color: white;
+}
+
+.fresh-bread {
+  padding: 80px 0px;
+  background-image: url(/assets/images/last-bg.jpg);
+  background-size: cover;
+}
+.fresh-bread .container > div {
+  text-align: center;
+}
+.fresh-bread img {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.fresh-bread h3 {
+  font-size: 3rem;
+}
+.fresh-bread p {
+  font-size: 1rem;
+  line-height: 2;
+  text-decoration: none;
+}
+.fresh-bread p a {
+  text-decoration: none;
+  border-bottom: 2px solid black;
+  transition: all 0.3 ease-in-out;
+}
+.fresh-bread p a:hover {
+  border-bottom-color: #f2952d;
+}
+
+.contact {
+  padding: 120px 0px;
+  background-image: url(/assets/images/big-img-4.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.contact-info {
+  width: 45%;
+  color: white;
+  background-color: rgba(26, 26, 26, 0.8);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+.contact-info h3 {
+  color: #f2952d;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: none;
+  font-size: 2.25rem;
+  margin: 0;
+}
+.contact-info p {
+  font-size: 1.125rem;
+  margin-top: 25px;
+}
+.contact-info a {
+  color: #f2952d;
+}
+.contact-info p.copyrights a {
+  color: white;
+}
+
+footer {
+  padding: 60px 0px;
+  background-color: rgb(33, 32, 32);
+  text-align: center;
+}
+footer p {
+  line-height: 40px;
+  font-size: 0.875rem;
+  color: white;
+}
+footer p a {
+  color: #f2952d;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    display: none;
+  }
+  main {
+    height: auto;
+    background-size: 1020px 100vh;
+    background-position: top right;
+  }
+  main .container {
+    height: auto;
+  }
+  main h3 {
+    margin: 70px 0px 10px 0px !important;
+  }
+  main .intro {
+    width: 100%;
+    height: 100vh;
+    padding-top: 80px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  main .intro .title {
+    grid-column: 1/1;
+  }
+  main .intro .title span {
+    display: none;
+  }
+  main .intro .title h1 {
+    font-size: 4.2rem;
+    padding-top: 20px;
+  }
+  .categories .categories-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .categories .categories-grid img {
+    height: 65px !important;
+  }
+  .fresh-breads {
+    height: 765px;
+    background-position: bottom left;
+    background-size: 100%;
+  }
+  .fresh-breads .container {
+    height: 100%;
+    align-items: flex-start;
+  }
+  .fresh-breads .content {
+    width: 100%;
+  }
+  .our-breads .our-breads-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+  .our-breads .card {
+    margin: 0 20px;
+  }
+  .delicious-baking .container {
+    width: 90% !important;
+  }
+  .delicious-baking h2 {
+    margin: 0 20px;
+  }
+  .delicious-baking-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .delicious-baking-grid .img-left {
+    margin-top: 0px;
+  }
+  .delicious-baking-grid img {
+    width: 95%;
+  }
+  .menu-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .fresh-bread p {
+    display: none;
+  }
+  .fresh-bread h3 {
+    font-size: 2rem;
+    text-align: start;
+  }
+  .fresh-bread img {
+    width: 400px;
+  }
+  .contact-info {
+    width: 100%;
+    padding: 20px;
+  }
+}/*# sourceMappingURL=bakery.css.map */

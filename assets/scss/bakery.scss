@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800;900&family=Roboto:wght@400;700;900&display=swap');
+@import 'variables';
+@import 'base';
+
+// header
+header{
+    height: 60px;
+    background-color: $bwhite;
+   .container{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        width: 50px;
+        margin-bottom: 15px;
+    }
+   }
+    nav{
+        width: 50%;
+        margin-right: -400px;
+        display: block;
+    }
+    ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    a{
+        color: $cblack;
+        text-decoration: none;
+        transition: all .3 ease-in-out;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+// MAIN
+main{
+    width: 100%;
+    height: calc(100vh - 50px);
+    background-image: url(/assets/images/home-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container{
+        height: calc(100vh - 80px);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .intro{
+        width: 50%;
+        height: 60vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        h3{
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 1.378rem;
+            margin: 0 1px 30px 0;
+        }
+        .title{
+            grid-column: 1 / 4;
+            margin-bottom: 80px;
+            span:nth-child(1){
+                text-transform: uppercase;
+                letter-spacing: 12px;
+                font-size: 1.875rem;
+                font-weight: 400;
+                margin: 0 auto 0 0;
+            } 
+        }
+        .callus{ 
+            a{
+                display: inline-block;
+                margin-bottom: 20px;
+                text-decoration: none;
+                border-bottom: 1px solid $corange;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    border-color: $cblack;
+                }
+            }
+        }
+    }
+}
+
+// CATEGORIES
+.categories {
+    padding: 70px 0px 120px 0px;
+    h2{
+        text-align: center;
+    }
+    .categories-grid{
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 40px;
+        .category{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+        img{
+            height: 65px !important;
+        }
+        h4{
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+    }
+}
+
+// FRESH BREADS
+.fresh-breads {
+    padding: 100px 0px;
+    background-image: url(/assets/images/fresh-breads-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-color: black;
+    background-size: 50%;
+    .container{
+        height: 500px;
+        color: $cwhite;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .content{
+        width: 50%;
+        p{
+            margin: 50px 0px;
+        }
+        a{
+            color: $cwhite;
+        }
+    }
+    .btn{
+        border-color:white;
+        color: white;
+        margin-top: 10px;
+        display: inline-block;
+        transition: all .3 ease-in-out;
+        &:hover{
+            background-color: white;
+            color:black;
+        } 
+    }
+}
+
+// Our Breads
+.our-breads{
+    padding: 70px 0px;
+    background-color: $bgray;
+    h2{
+        margin-bottom: 60px;
+        text-align: center;  
+    }
+    .our-breads-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 25px;
+        text-align: center;
+    }
+    h3 {
+        text-transform: uppercase;
+        font-size: 1.125rem;
+        letter-spacing: 2px;
+        font-weight: 700;
+        margin: 20px auto 0;
+    }
+    p {
+        margin: 20px 0;
+    }
+    p.copyrights{
+        text-align: center;
+        margin-top: 40px;
+    }
+}
+
+// DELICIOUS-BAKING
+.delicious-baking{
+    padding: 80px 0;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 45%, rgba(242,242,242,1) 100%);
+    .container{
+        width: 900px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+    }
+    &-grid{
+        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 2fr;
+        gap: 40px;
+        .top-right-image{
+            grid-column: 2 / 3;
+            grid-row: 1 / 3;  
+        }
+        img {
+            width: 100%;
+            display: block;
+        }
+        .img-left{
+            margin-top: 40px;
+        }
+    }
+    .content{
+        margin-top: 50px;
+        h3{
+            font-size: 1.875rem;
+            line-height: 1.2; 
+        }
+        p{
+            font-size: 1.125rem;
+            line-height: 2;
+            margin: 30px 0px 0px 0px;
+            a{
+                text-decoration: none;
+                border-bottom: 2px solid black;
+                transition: all .3 ease-in-out;
+                &:hover {
+                    border-bottom-color: $corange;
+                }
+            }
+        }
+        .btn{
+            border-color: black;
+            color: black;
+            display: inline-block;
+            &:hover{
+                color: white;
+                background-color: black;
+            }
+        }
+    }
+}
+
+// MENU
+.menu{
+    padding: 120px 0px;
+    background-image: url(/assets/images/menu.bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    h2{
+        color: $cwhite;
+        text-align: center;
+    }
+    &-grid{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        .card{
+            padding: 35px 20px;
+        }
+        h3{
+            font-size: 1.5rem;
+            line-height: 1.2;
+            margin-bottom: 25px;
+        }
+        ul{
+            list-style-type: none;
+        }
+        li{
+            font-size: 1.25rem;
+            line-height: 2;
+            &::before{
+                content: '-';
+                margin-right: 10px;
+            }
+        }
+    }
+    .copyrights{
+        color: white;
+        text-align: center;
+        margin-top: 60px;
+        a{
+            color: white;
+        }
+    }
+}
+
+// FRESH-BREAD
+.fresh-bread{
+    padding: 80px 0px;
+    background-image:url(/assets/images/last-bg.jpg) ;
+    background-size: cover;
+    .container>div{
+        text-align: center;
+    }
+    img{
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    h3{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1rem;
+        line-height: 2;
+        text-decoration: none;
+        a{
+            text-decoration: none;
+            border-bottom: 2px solid black;
+            transition: all .3 ease-in-out;
+            &:hover{
+                border-bottom-color:$corange ;
+
+            }
+        }
+    }
+}
+
+// CONTACT
+.contact{
+    padding: 120px 0px;
+    background-image: url(/assets/images/big-img-4.jpg);
+    background-size: cover;
+    background-position: center center;
+    &-info {
+        width: 45%;
+        color: white;
+        background-color: rgba(26,26,26,0.8);
+        padding: 30px;
+        border-radius: 20px;
+        text-align: center;
+        h3{
+            color: $corange;
+            letter-spacing: 1px;
+            font-weight: 700;
+            text-transform: none;
+            font-size: 2.25rem;
+            margin: 0;
+        }
+        p{
+            font-size: 1.125rem;
+            margin-top: 25px;
+        }
+        a{
+            color: $corange;
+        }
+        p.copyrights{
+            a{
+                color: white;
+            }
+        }
+    }
+}
+
+// FOOTER
+footer{
+    padding: 60px 0px;
+    background-color: rgb(33, 32, 32);
+    text-align: center;
+    p{
+        line-height: 40px;
+        font-size: 0.875rem;
+        color: white;
+        a {
+            color: $corange;
+        }
+    }
+}
+
+// MOBILE VERSION (@media query)
+@media screen and (max-width: 768px){
+
+    header{
+        display: none;
+    }
+
+    main{
+        height: auto;
+        background-size: 1020px 100vh;
+        background-position: top right;
+        .container{
+            height: auto;
+        }
+        h3{
+            margin: 70px 0px 10px 0px !important;
+        }
+        .intro{
+            width: 100%;
+            height: 100vh;
+            padding-top: 80px;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            .title{
+                grid-column: 1 / 1;
+                span{
+                    display: none;
+                }
+                h1{   
+                font-size: 4.2rem;
+                padding-top: 20px;
+                }  
+            }
+        }
+    }
+
+    .categories {
+        .categories-grid{
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            img{
+                height: 65px !important;
+            }
+        } 
+    }
+
+    .fresh-breads {
+        height: 765px;
+        background-position: bottom left;
+        background-size: 100%;   
+        .container{
+            height: 100%;
+            align-items: flex-start;
+        }
+        .content{
+            width: 100%;
+        }
+    }
+
+    .our-breads{
+            .our-breads-grid{
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(8, 1fr);
+            }
+            .card{
+                margin: 0 20px;
+            }   
+    }
+
+    .delicious-baking{
+        .container{
+            width: 90% !important;  
+        }
+        
+        h2{
+            margin: 0 20px;
+        }
+        &-grid{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .img-left{
+                margin-top: 0px;
+            }
+            img{
+                width: 95%;
+            }
+        }
+    }
+
+    .menu{
+        &-grid{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    .fresh-bread{
+        p{
+            display: none;
+        }
+        h3{
+            font-size: 2rem;
+            text-align: start;
+        }
+        img{
+            width: 400px;
+        }
+    }
+
+    .contact{
+        &-info {
+            width: 100%;
+            padding: 20px;
+        }
+    }   
+}
